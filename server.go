@@ -33,7 +33,8 @@ func getKubeConfig() string {
 		config, err := rest.InClusterConfig()
 		if err != nil {
 			log.Printf("Error getting kubeconfig")
-			panic(err.Error())
+			return "<h1>Dude we ain't in a kubernetes cluster like we sposed to B\n<h1>" 
+			//panic(err.Error())
 		}
 		// creates the clientset
 		clientset, err := kubernetes.NewForConfig(config)

@@ -16,3 +16,10 @@ server  49011 patricklogan    6u  IPv6 0xf148eca9f4ef31a9      0t0  TCP *:http-a
 $> sudo kill -9 49011
 fish: Job 1, './server' terminated by signal SIGKILL (Forced quit)
 ```
+
+
+## Docker build
+
+```bash
+docker build -t pwleng/kubestats:0.0.1 .
+```
